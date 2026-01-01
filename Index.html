@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Robux/Reais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Robux/Reais</h1>
+        <label for="conversionType">Você quer robux para dinheiro ou dinheiro para robux?</label>
+        <select id="conversionType">
+            <option value="">Selecione uma opção</option>
+            <option value="rtre">Robux para Dinheiro (R$)</option>
+            <option value="retr">Dinheiro (R$) para Robux</option>
+        </select>
+
+        <div id="inputSection" style="display: none;">
+            <label for="amountInput" id="inputLabel"></label>
+            <input type="number" id="amountInput" placeholder="Digite o valor">
+            <button onclick="convert()">Converter</button>
+        </div>
+
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
