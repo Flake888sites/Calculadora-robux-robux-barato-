@@ -1,7 +1,7 @@
 
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Fonte mais comum e limpa */
-    background-color: #1a1a1a; /* Fundo escuro, quase preto */
+    background-color: black; /* Fundo escuro, quase preto */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@ body {
 }
 
 h1 {
-    color: #e50000; /* Vermelho vibrante, cor principal do site */
+    color: red; /* Vermelho vibrante, cor principal do site */
     font-size: 1.5em; /* Tamanho da fonte levemente aumentado */
     margin-bottom: 20px;
 }
