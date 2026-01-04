@@ -1,51 +1,40 @@
-// Adiciona um listener para a mudança na seleção do tipo de conversão
+
+// Adiciona um listener para mudar o label quando o tipo de conversão muda
 document.getElementById('conversionType').addEventListener('change', function() {
     const type = this.value;
-    const inputSection = document.getElementById('inputSection');
-    const inputLabel = document.getElementById('inputLabel');
-    
+    const label = document.getElementById('amountLabel');
     if (type === 'rtre') {
-        inputLabel.textContent = 'Quantos Robux você tem?';
-        inputSection.style.display = 'block';
-    } else if (type === 'retr') {
-        inputLabel.textContent = 'Quantos reais você tem?';
-        inputSection.style.display = 'block';
+        label.textContent = 'Quantos Robux você tem?';
     } else {
-        inputSection.style.display = 'none';
+        label.textContent = 'Quantos Reais você tem?';
     }
-    // Limpa o resultado e o input ao mudar a opção
-    document.getElementById('result').textContent = '';
-    document.getElementById('amountInput').value = '';
 });
 
-function convert() {
+function calculate() {
     const conversionType = document.getElementById('conversionType').value;
     const amountInput = document.getElementById('amountInput').value;
     const resultElement = document.getElementById('result');
-    
-    // Limpa o resultado anterior
-    resultElement.textContent = '';
 
-    // Validação básica do input
-    if (amountInput === '' || isNaN(amountInput) || parseFloat(amountInput) <= 0) {
-        resultElement.textContent = 'Esse valor não existe.';
+    // Validação básica para garantir que o input é um número válido
+    const amount = parseFloat(amountInput);
+
+    if (isNaN(amount) || amount <= 0) {
+        resultElement.textContent = 'Esse valor não existe ou é inválido.';
         return;
     }
 
-    const amount = parseFloat(amountInput);
     let resultMessage = '';
 
     if (conversionType === 'rtre') {
-        // Lógica: robux / 100 * 4.80
+        // Lógica: robux / 100 * 4.80 (baseado no código Python)
+        // Isso parece ser uma taxa de venda (quanto você recebe por 100 Robux)
         const reais = (amount / 100) * 4.80;
-        resultMessage = `Você vai poder vender por entorno de: ${reais.toFixed(2)} reais.`;
+        resultMessage = `Você vai poder vender por entorno de: R$ ${reais.toFixed(2)} reais.`;
     } else if (conversionType === 'retr') {
-        // Lógica: reais * 20.83
-        const robuxRate = 20.83;
-        const robux = amount * robuxRate;
-        resultMessage = `Você vai ganhar entorno de ${Math.floor(robux)} robux.`;
-    } else {
-        resultMessage = 'Por favor, selecione um tipo de conversão válido.';
+        // Lógica: reais * 20.83 (baseado no código Python)
+        // Isso parece ser a taxa de compra (quantos Robux você ganha por Real)
+        const robux = amount * 20.83;
+        resultMessage = `Você vai ganhar entorno de ${robux.toFixed(0)} robux.`;
     }
 
     resultElement.textContent = resultMessage;
