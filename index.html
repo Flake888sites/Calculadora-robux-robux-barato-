@@ -1,23 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Robux</title>
+    <title>Calculadora de Robux & Gamepass</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Calculadora de Robux & Reais da Robux Barato</h1>
-        <h6>Fonte dos valores: Robux Barato. © Todos os direitos reservados 2026.</h6>
+        <h6>Fonte dos valores: Robux Barato (exemplo). © Todos os direitos reservados 2026.</h6>
         <label for="conversionType">Escolha o tipo de conversão:</label>
-        <select id="conversionType">
+        <select id="conversionType" onchange="updateLabel()">
             <option value="rtre">Robux para Dinheiro (Reais)</option>
             <option value="retr">Dinheiro (Reais) para Robux</option>
+            <option value="gpprice">Preço da Gamepass (para ganhar X Robux)</option>
         </select>
 
         <label for="amountInput" id="amountLabel">Quantos Robux você tem?</label>
-        <input type="number" id="amountInput" placeholder="Digite o valor">
+        <input type="number" id="amountInput" placeholder="Digite o valor" min="0">
         
         <button onclick="calculate()">Calcular</button>
         
@@ -27,4 +29,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
