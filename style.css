@@ -40,7 +40,7 @@ select, input, button {
     border-radius: 4px;
     border: 1px solid #ff0000;
     background-color: #333;
-    color: #fff;
+    color: #000;
     box-sizing: border-box; /* Garante que padding não aumente a largura total */
 }
 
@@ -51,7 +51,7 @@ button {
 }
 
 button:hover {
-    background-color: #e60000;
+    background-color: #ffff00;
 }
 
 p#result {
