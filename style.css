@@ -69,3 +69,13 @@ h6 {
     color: #aaaaaa; /* Cor cinza claro */
     margin-bottom: 15px;
 }
+
+#updateDate {
+    color: #000000; /* Cor do texto: preto */
+    background-color: #ffeb00; /* Cor de fundo: amarelo */
+    padding: 5px 10px; /* Adiciona um pouco de espaço ao redor do texto */
+    border-radius: 5px; /* Bordas levemente arredondadas */
+    font-family: sans-serif; /* Uma fonte comum e legível */
+    display: inline-block; /* Garante que o fundo cubra apenas o texto */
+}
+
