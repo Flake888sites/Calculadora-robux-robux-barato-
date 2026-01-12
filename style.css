@@ -13,7 +13,7 @@ body {
     background-color: #1a1a1a; /* Cinza escuro para o container */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3); /* Sombra vermelha para destacar */
+    box-shadow: 0 4px 8px rgba(255, 255, 0); /* Sombra vermelha para destacar */
     text-align: center;
     width: 300px;
     border: 1px solid #ff0000; /* Borda vermelha */
