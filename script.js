@@ -53,6 +53,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // Encontra o elemento pelo ID e atualiza seu conteúdo
     const dateElement = document.getElementById('updateDate');
     if (dateElement) {
-        dateElement.textContent = `Taxas atualizadas em: ${formattedDate}`;
+        dateElement.textContent = `Última atualização do site em: ${formattedDate}`;
     }
 });
