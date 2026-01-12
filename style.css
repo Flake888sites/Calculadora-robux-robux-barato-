@@ -10,17 +10,17 @@ body {
 }
 
 .container {
-    background-color: #1a1a1a; /* Cinza escuro para o container */
+    background-color: #1a1a1a; /* Cinza muito escuro para o container */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3); /* Sombra vermelha para destacar */
+    box-shadow: 0 4px 8px rgba(255, 255, 0, 0.5); /* Sombra amarela para destacar */
     text-align: center;
     width: 300px;
-    border: 1px solid #ff0000; /* Borda vermelha */
+    border: 1px solid #ffeb00; /* Borda amarela */
 }
 
 h1 {
-    color: #ff0000; /* Título vermelho brilhante */
+    color: #ffeb00; /* Título amarelo brilhante */
     font-size: 1.2em;
 }
 
@@ -38,32 +38,34 @@ select, input, button {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 4px;
-    border: 1px solid #ff0000;
-    background-color: #333;
-    color: #fff;
+    border: 1px solid #ffeb00; /* Borda amarela */
+    background-color: #333; /* Fundo escuro para campos */
+    color: #fff; /* Texto branco */
     box-sizing: border-box; /* Garante que padding não aumente a largura total */
 }
 
 button {
-    background-color: #ff0000;
+    background-color: #ffeb00; /* Fundo do botão amarelo */
+    color: #000; /* Texto do botão preto para contraste */
     cursor: pointer;
     font-weight: bold;
 }
 
 button:hover {
-    background-color: #e60000;
+    background-color: #ffdd00; /* Amarelo ligeiramente mais escuro ao passar o mouse */
 }
 
 p#result {
     margin-top: 20px;
     padding: 10px;
-    background-color: #333;
+    background-color: #333; /* Fundo escuro para o resultado */
     border-radius: 4px;
     word-wrap: break-word; /* Para garantir que o resultado caiba na caixa */
+    color: #ffeb00; /* Texto do resultado amarelo */
 }
 
 h6 {
     font-size: 0.7em;
-    color: #aaa;
+    color: #aaaaaa; /* Cor cinza claro */
     margin-bottom: 15px;
 }
