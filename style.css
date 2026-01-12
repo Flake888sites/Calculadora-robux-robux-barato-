@@ -16,11 +16,11 @@ body {
     box-shadow: 0 4px 8px rgba(255, 255, 0); /* Sombra vermelha para destacar */
     text-align: center;
     width: 300px;
-    border: 1px solid #ff0000; /* Borda vermelha */
+    border: 1px solid #ffff00; /* Borda vermelha */
 }
 
 h1 {
-    color: #ff0000; /* Título vermelho brilhante */
+    color: #ffff00; /* Título vermelho brilhante */
     font-size: 1.2em;
 }
 
@@ -45,7 +45,7 @@ select, input, button {
 }
 
 button {
-    background-color: #ff0000;
+    background-color: #ffff00;
     cursor: pointer;
     font-weight: bold;
 }
