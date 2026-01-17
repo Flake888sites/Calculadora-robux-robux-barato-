@@ -35,24 +35,3 @@ function calculate() {
   // mantive o código da forma como foi solicitado.
 }
 
-
-// Aguarda o carregamento completo do documento
-document.addEventListener('DOMContentLoaded', (event) => {
-    // Cria um novo objeto de Data (data e hora atuais)
-    const today = new Date();
-
-    // Obtém o dia, mês e ano
-    // getMonth() retorna um valor de 0 a 11, então adicionamos 1 para o mês correto
-    const day = String(today.getDate()).padStart(2, '0');
-    const month = String(today.getMonth() + 1).padStart(2, '0');
-    const year = today.getFullYear();
-
-    // Formata a data como dd/mm/yyyy
-    const formattedDate = `${day}/${month}/${year}`;
-
-    // Encontra o elemento pelo ID e atualiza seu conteúdo
-    const dateElement = document.getElementById('updateDate');
-    if (dateElement) {
-        dateElement.textContent = `Última atualização do site em: ${formattedDate}`;
-    }
-});
