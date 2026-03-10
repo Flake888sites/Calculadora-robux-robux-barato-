@@ -30,7 +30,7 @@ function calculate() {
 
     if (conversionType === 'rtre') {
         const reais = (amount / 100) * 4.80;
-        resultMessage = `Você vai poder vender por entorno de: R$ ${reais.toFixed(2)}`;
+        resultMessage = `Você vai poder comprar por entorno de: R$ ${reais.toFixed(2)}`;
     } 
     else if (conversionType === 'retr') {
         const robux = amount * 20.83;
