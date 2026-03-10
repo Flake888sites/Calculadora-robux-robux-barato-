@@ -4,7 +4,7 @@ function updateLabel() {
     const amountInput = document.getElementById('amountInput');
 
     if (conversionType === 'rtre') {
-        amountLabel.textContent = 'Quantos Robux você tem?';
+        amountLabel.textContent = 'Quantos Robux quer?';
         amountInput.placeholder = 'Ex: 1000';
     } else if (conversionType === 'retr') {
         amountLabel.textContent = 'Quantos Reais (R$) você tem?';
